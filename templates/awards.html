@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Gym Awards{% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="container">
+    <h1 class="text-center mt-5">Gym Awards</h1>
+    <ul class="list-unstyled award-list d-flex justify-content-center align-items-center flex-wrap">
+        <li class="award-item text-center m-3">
+            <img src="{% static 'images/award1.jpg' %}" alt="Award Image" class="award-image">
+            <span class="d-block mt-2 font-weight-bold font-italic">Most Consistent Attendee Award</span>
+	    <span class="d-block mt-2 font-weight-bold font-italic">Biggest Transformation Award</span>
+	    <span class="d-block mt-2 font-weight-bold font-italic">Strength and Conditioning Champion</span>
+            <span class="d-block mt-2 font-weight-bold font-italic">Cardio King/Queen</span>
+            <span class="d-block mt-2 font-weight-bold font-italic">Most Improved Lifter</span>
+            <span class="d-block mt-2 font-weight-bold font-italic">Weight Loss Warrior</span>
+            <span class="d-block mt-2 font-weight-bold font-italic">Muscle Building Marvel</span>
+	
+        </li>
+        
+            
+            
+      
+        <!-- Add more award items following the same pattern -->
+    </ul>
+</div>
+{% endblock body %}
+
+{% block head %}
+<!-- Bootstrap CDN -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .award-image {
+        width: 100px; /* Adjust the size as needed */
+        height: auto;
+    }
+</style>
+{% endblock %}

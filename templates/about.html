@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About
+{% endblock title %}
+
+{% block content %}
+
+<h1>About Us</h1>
+
+{% endblock content %}
+
+{% block body %}
+{% load static %}
+<br>
+<h3 align='center'><strong>Worrying About How To Navigate The Web Application? Here is The Solution!!!!!!!</strong></h3>
+    <div class="container mt-4">
+            <div class="d-flex justify-content-center align-items-center video-container">
+            <video controls align="left" width="640" height="300" autoplay loop>
+                <source src="{% static 'videos/Gym project recording.mp4' %}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+<br>
+ <div class="container mt-5">
+    <div class="row">
+       
+            
+            <div class="text-right">
+                <h3 class="mb-4"><strong>About The Gym Management System Web Application </strong></h3>
+                <p>
+                    <i>Hello,as you have saw the team members on the home page we're the developer of this Gym Management System.
+		    We're a Third Year Computer Engineering Students From Shah & Anchor Kutchhi Engineering College,We like to learn new skills and implement them which help us to understand the development things more properly.
+		    We're a Python Full Stack Developers We've Made this Web Application Using HTML,CSS,JS,Bootsrap and Django,The Main Task while developing the project was to write the logic on tracking the workout function but we'd enjoyed the process of this project,
+		    During Spare Time We like to make projects which helps us to make more and more projects.We would like to here your feedback please feel free to contact us if you've any query Thank You!! keep grinding.</i> 	
+                </p>
+            </div>
+        
+    </div>
+</div>
+
+
+{% endblock body %}
+
